@@ -3,7 +3,7 @@ import os
 
 app = Flask(__name__)
 
-# Define the directory containing the processed files
+
 content_dir = './scraped_content/'
 
 # Function to read the content of the files
@@ -11,7 +11,7 @@ def read_content(file_path):
     with open(file_path, 'r', encoding='utf-8') as file:
         return file.read()
 
-# Route for the main page
+
 @app.route('/', methods=['GET', 'POST'])
 def index():
     products = [
