@@ -29,8 +29,4 @@ To set up and use the project, follow these steps:
 -Clone the Repository:
 
 -Install Dependencies:
-Ensure you have Python and the necessary libraries installed. You can install the required packages using:
-
-
-Contributing
-Contributions are welcome. Please fork the repository and create a pull request with your changes.
+Ensure you have Python and the necessary libraries installed.
