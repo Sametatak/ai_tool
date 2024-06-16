@@ -1,0 +1,68 @@
+Given the content provided and the specified categories and subcategories, here is the extracted and tagged information for the product 'Washing Machine':
+
+---
+
+Category: **Product**  
+Subcategory: **New Feature/Specification**  
+Information Type: **Auto Dispense, Super Speed, AI Smart Dial, Pet Care, Vibration Reduction Technology+, Active WaterJet**  
+Product Type: **Washing Machine**  
+Source Type: **Academic Website**  
+Country: **United States**
+
+---
+
+Category: **Product**  
+Subcategory: **New Technology**  
+Information Type: **AI Optiwash, AI Energy mode reducing energy use by up to 35%**  
+Product Type: **Washing Machine**  
+Source Type: **Academic Website**  
+Country: **United States**
+
+---
+
+Category: **Market**  
+Subcategory: **Promotion**  
+Information Type: **Get an instant rebate in an amount equal to 15% of the purchase price of the eligible Floorcare model when you bundle it with an eligible LG Washer and Dryer. Offer valid between May 2, 2024 and July 10, 2024**  
+Product Type: **Washing Machine**  
+Source Type: **Academic Website**  
+Country: **United States**
+
+---
+
+Category: **Market**  
+Subcategory: **Promotion**  
+Information Type: **Get $100 off with select washer/dryer pair. Terms apply.**  
+Product Type: **Washing Machine**  
+Source Type: **Academic Website**  
+Country: **United States**
+
+---
+
+Category: **Market**  
+Subcategory: **Promotion**  
+Information Type: **Save up to 35% on select OLED TVs.**  
+Product Type: **Washing Machine**  
+Source Type: **Academic Website**  
+Country: **United States**
+
+---
+
+Category: **Market**  
+Subcategory: **Price Increase**  
+Information Type: **Prices and offers are non-redeemable for cash and non-transferable. Prices subject to change without notice.**  
+Product Type: **Washing Machine**  
+Source Type: **Academic Website**  
+Country: **United States**
+
+---
+
+Category: **Public**  
+Subcategory: **Legislative Change**  
+Information Type: **Participating retailers may not utilize this offer in combination with any other offers, including but not limited to appliance bundle offers, that may be available from LG Electronics USA, Inc. Promotional offer void where prohibited, taxed or restricted by law.**  
+Product Type: **Washing Machine**  
+Source Type: **Academic Website**  
+Country: **United States**
+
+---
+
+This tagging will help in categorizing and filtering the information effectively for analysis or further research, specific to the 'Washing Machine' product in the relevant fields.

@@ -1,0 +1,15 @@
+### Product Information Extraction for 'Dishwasher'
+
+#### Product: New Technology
+- **Information Type**: In-Sink Dishwashers
+- **Details**: Designed for modern living in compact spaces, FOTILE In-Sink Dishwashers address kitchen problems with less space and energy consumption. The ergonomic, counter-mounted design eliminates bending over to load and take out dishes, making it suitable for a broader demographic.
+- **Product Type**: Dishwasher
+- **Source Type**: Institutional Websites
+- **Country**: YourCountry
+
+#### Product: New Feature/Specification
+- **Information Type**: Multi-functionality
+- **Details**: Combining a kitchen sink, a dishwasher, and a produce and seafood cleaner (SD2F-P1X only), FOTILE sink dishwashers offer multi-functional capabilities ideal for modern compact living spaces.
+- **Product Type**: Dishwasher
+- **Source Type**: Institutional Websites
+- **Country**: YourCountry

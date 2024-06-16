@@ -1,0 +1,206 @@
+Below is the extracted relevant information tagged by category, subcategory, information type, product type, source type, and country where applicable:
+
+---
+
+### Category: Event
+#### Subcategory: Exhibition/Fair
+- **Information Type:** None
+- **Product Type:** Cooking Range
+- **Source Type:** None
+- **Country:** None
+
+---
+
+### Category: Product
+#### Subcategory: New Product
+- **Information:** Bertazzoni cooking appliances
+- **Information Type:** Details the quality and heritage of Bertazzoni's cooking appliances available globally.
+- **Product Type:** Cooking Range
+- **Source Type:** Institutional Websites
+- **Country:** Italy
+
+#### Subcategory: New Feature/Specification
+- **Information 1:** Facebook: Offer a huge selection of kitchen ranges from leading brands, including gas ranges, electric ranges, induction ranges, dual fuel ranges, professional ranges, and double oven ranges.
+- **Information 2:** Convection cooking
+- **Information 3:** & Features like Frozen Bake™ Technology, Even-Heat™ True Convection, and air fry mode.
+- **Product Type:** Cooking Range
+- **Source Type:** Institutional Websites
+- **Country:** USA
+
+#### Subcategory: New Technology
+- **Information:** Smart ranges allowing remote control and monitoring features via WiFi & App.
+- **Product Type:** Cooking Range
+- **Source Type:** Institutional Websites
+- **Country:** USA
+
+#### Subcategory: Product Change
+- **Information:** None
+- **Product Type:** Cooking Range
+- **Source Type:** None
+- **Country:** None
+
+#### Subcategory: Product Discontinue
+- **Information:** None
+- **Product Type:** Cooking Range
+- **Source Type:** None
+- **Country:** None
+
+---
+
+### Category: Market
+#### Subcategory: Competitor
+- **Information:** Brands mentioned include Bertazzoni, KitchenAid, Whirlpool, GE Appliances, JennAir, Viking, and BlueStar.
+- **Product Type:** Cooking Range
+- **Source Type:** Institutional Websites
+- **Country:** Various countries
+
+#### Subcategory: Consumer Trend
+- **Information:** Trends towards smart appliances and induction ranges.
+- **Product Type:** Cooking Range
+- **Source Type:** Institutional Websites
+- **Country:** USA
+
+#### Subcategory: Market Indicator
+- **Information:** Availability of promotional offers, discounts, and flash sales indicate market strategies to boost sales.
+- **Product Type:** Cooking Range
+- **Source Type:** Institutional Websites
+- **Country:** USA
+
+#### Subcategory: Price Increase
+- **Information:** None
+- **Product Type:** Cooking Range
+- **Source Type:** None
+- **Country:** None
+
+#### Subcategory: Price Decrease
+- **Information:** Discount promotions and flash sales, ranging from $599 to $999.
+- **Product Type:** Cooking Range
+- **Source Type:** Institutional Websites
+- **Country:** USA
+
+#### Subcategory: Promotion
+- **Information:** Offers like coupon codes "FREEDELIVERY" and "SAVETEN24", and promotions related to Best Buy and other retail sites mentioned.
+- **Product Type:** Cooking Range
+- **Source Type:** Institutional Websites
+- **Country:** USA
+
+#### Subcategory: Mergers and Acquisitions
+- **Information:** None
+- **Product Type:** Cooking Range
+- **Source Type:** None
+- **Country:** None
+
+#### Subcategory: Investment
+- **Information:** None
+- **Product Type:** Cooking Range
+- **Source Type:** None
+- **Country:** None
+
+#### Subcategory: Bankrupt
+- **Information:** None
+- **Product Type:** Cooking Range
+- **Source Type:** None
+- **Country:** None
+
+#### Subcategory: Public Offering
+- **Information:** None
+- **Product Type:** Cooking Range
+- **Source Type:** None
+- **Country:** None
+
+---
+
+### Category: Economy
+#### Subcategory: Raw Material Price Change
+- **Information:** None
+- **Product Type:** Cooking Range
+- **Source Type:** None
+- **Country:** None
+
+#### Subcategory: Energy Price Change
+- **Information:** None
+- **Product Type:** Cooking Range
+- **Source Type:** None
+- **Country:** None
+
+#### Subcategory: Unemployment
+- **Information:** None
+- **Product Type:** Cooking Range
+- **Source Type:** None
+- **Country:** None
+
+#### Subcategory: Employment
+- **Information:** None
+- **Product Type:** Cooking Range
+- **Source Type:** None
+- **Country:** None
+
+#### Subcategory: Interest Rate Change
+- **Information:** None
+- **Product Type:** Cooking Range
+- **Source Type:** None
+- **Country:** None
+
+#### Subcategory: Economic Growth
+- **Information:** None
+- **Product Type:** Cooking Range
+- **Source Type:** None
+- **Country:** None
+
+#### Subcategory: Recession
+- **Information:** None
+- **Product Type:** Cooking Range
+- **Source Type:** None
+- **Country:** None
+
+#### Subcategory: Inflation
+- **Information:** None
+- **Product Type:** Cooking Range
+- **Source Type:** None
+- **Country:** None
+
+#### Subcategory: Currency Fluctuation
+- **Information:** None
+- **Product Type:** Cooking Range
+- **Source Type:** None
+- **Country:** None
+
+---
+
+### Category: Public
+#### Subcategory: Legislative Change
+- **Information:** None
+- **Product Type:** Cooking Range
+- **Source Type:** None
+- **Country:** None
+
+#### Subcategory: Regulation Change
+- **Information:** None
+- **Product Type:** Cooking Range
+- **Source Type:** None
+- **Country:** None
+
+#### Subcategory: Incentive grant
+- **Information:** The Inflation Reduction Act offers rebates for converting from gas to electric ranges.
+- **Product Type:** Cooking Range
+- **Source Type:** Institutional Websites
+- **Country:** USA
+
+#### Subcategory: Tender
+- **Information:** None
+- **Product Type:** Cooking Range
+- **Source Type:** None
+- **Country:** None
+
+---
+
+### Source Type: Institutional Websites
+- **Information:** Multiple sources including brands like KitchenAid, Bertazzoni, Whirlpool, and BlueStar.
+- **Country:** USA, Italy, and other locations.
+
+---
+
+### Country: USA
+- **Information:** Prominent country for sales, promotions, discounts, smart technology integration in cooking ranges.
+- **Product Type:** Cooking Range
+- **Source Type:** Institutional Websites

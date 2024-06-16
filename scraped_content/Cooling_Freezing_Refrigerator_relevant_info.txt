@@ -1,0 +1,43 @@
+**Category: Product**
+- **Subcategory: New Feature/Specification**
+  - **Information Type: Advice on Use**
+  - **Product Type: Refrigerator**
+  - **Source Type: Whirlpool.com, KitchenAid.com, TCL, Acima Leasing, Cold-Rite, Homeforce**
+  - **Country: USA, Global**
+  
+**Content Extracted:**
+
+1. **Whirlpool.com, KitchenAid.com**
+   - **New Features/Specifications**: 
+     - Solutions for preventing food from freezing in refrigerator compartments.
+     - Proper temperature settings for refrigerator (38-40°F) and freezer (0-2°F).
+     - Importance of clear air vents and door seals.
+     - Manual checks for temperature and air flow.
+     - Regular maintenance instructions such as cleaning condenser coils and replacing faulty components like temperature sensors.
+     - Troubleshooting steps for built-in ice makers causing freezing.
+   - **Promotional Offers**: 
+     - Discount codes like "SAVETEN24", "FREEDELIVERY" for new orders.
+     - Specific time-bound sales and promotions ending in June and July 2024.
+
+2. **TCL**
+   - **New Technologies**: 
+     - Features including Multi Air Flow, Advanced Airflow Technology, Bio FRESH compartments, Twin Eco Inverter.
+     - Specific models like Multi Doors, Side by Side, Top Mount Freezers, Bottom Mount Freezers, and Chest freezers.
+
+3. **Acima Leasing**
+   - **New Advice/Specifications**: 
+     - Importance of temperature control settings.
+     - Tips for preventing food freezing through adequate fridge stocking and mechanical adjustments.
+     - Financing options for replacing refrigerators if recurring freezing issues exist.
+
+4. **Cold-Rite**
+   - **Service Information**: 
+     - Common causes of commercial refrigerator pipes freezing such as dirty air filters and evaporator coils, blocked vents, and refrigerant leaks.
+     - DIY methods to defrost and maintain commercial refrigerators to prevent ice build-up and freezing issues.
+
+5. **Homeforce**
+   - **General Advice**: 
+     - Common causes of a refrigerator freezing up at the back such as poor air circulation, thermostat issues, and faulty defrost timers.
+     - Simple DIY fixes and when to call professional assistance for refrigerator maintenance and repairs.
+
+This summary consolidates essential advice on preventing and troubleshooting refrigerator freezing issues, promotional offers, and advanced features of modern refrigerators to aid in better use and maintenance practices.
