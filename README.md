@@ -23,6 +23,8 @@ The collected information needs to be tagged for easier retrieval and analysis. 
 
 -Developing a UI that allows users to filter and view the tagged information.
 -Ensuring the information is easily accessible and navigable.
+![image](https://github.com/Sametatak/ai_tool/assets/50046275/1696df04-8282-4a59-b1e9-de1384bc9686)
+
 # Setup and Usage
 To set up and use the project, follow these steps:
 
