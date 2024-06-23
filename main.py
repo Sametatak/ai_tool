@@ -4,25 +4,29 @@ import requests
 from bs4 import BeautifulSoup
 import os
 import logging
-from serpapi import GoogleSearch
-
+from selenium import webdriver
+from selenium.webdriver.common.by import By
+from selenium.webdriver.common.keys import Keys
+from selenium.webdriver.chrome.service import Service as ChromeService
+from selenium.webdriver.chrome.options import Options
+from selenium.webdriver.support.ui import WebDriverWait
+from selenium.webdriver.support import expected_conditions as EC
+from webdriver_manager.chrome import ChromeDriverManager
+import time
 
 logging.basicConfig(filename='main_task_debug.log', level=logging.DEBUG,
                     format='%(asctime)s - %(levelname)s - %(message)s')
 
-
-openai_api_key = os.getenv("OPENAI_API_KEY") 
-
+openai.api_key = os.getenv("OPENAI_API_KEY")
 
 product_categories = {
     "Cooking_Appliances": ["Freestanding Oven", "Built-In Oven", "Cooktop", "Cooking Range"],
     "Cooling_Freezing": ["Refrigerator", "Freezer", "Bottle Cooler"],
-    "Washing_Machine": ["Washing Machine"],
+    "Washing_Machine": ["Washing_Machine"],
     "Dishwasher": ["Dishwasher"],
     "Dryer": ["Dryer"],
     "Television": ["Television"]
 }
-
 
 information_categories = {
     "Event": ["Exhibition/Fair", "Convention/Summit", "Conference", "Corporate Meeting", "Opening", "Webinar", "Workshop", "Networking", "Charity"],
@@ -32,31 +36,53 @@ information_categories = {
     "Public": ["Legislative Change", "Regulation Change", "Incentive grant", "Tender"]
 }
 
-
-source_types = ["News Portal", "Competitor's Website", "Government Website", "Academic Website", "Industrial Websites", "Institutional Websites"]
-
-
-def get_best_sources_with_serpapi(query):
-    params = {
-        "engine": "google",
-        "q": query,
-        "num": "20",
-        "api_key": "serp_api_key"  
-    }
+def search_perplexica(query):
+    chrome_options = Options()
+    chrome_options.add_argument("--headless")  
+    driver = webdriver.Chrome(service=ChromeService(ChromeDriverManager().install()), options=chrome_options)
+    
     try:
-        search = GoogleSearch(params)
-        results = search.get_dict()
-        if "error" in results:
-            logging.error(f"SerpAPI error for query '{query}': {results['error']}")
-            print(f"SerpAPI error for query '{query}': {results['error']}")
-            return []
-        search_results = [result['link'] for result in results.get('organic_results', [])]
-        logging.debug(f"SerpAPI results for query '{query}': {search_results}")
+        driver.get("http://localhost:3000")
+
+        wait = WebDriverWait(driver, 20)
+        search_box = wait.until(EC.presence_of_element_located((By.CSS_SELECTOR, "textarea[placeholder='Ask anything...']")))
+
+        search_box.send_keys(query)
+        search_box.send_keys(Keys.RETURN)
+
+        time.sleep(20)  
+        
+        results = driver.find_elements(By.CSS_SELECTOR, "a")
+        
+        websites = []
+        for result in results:
+            url = result.get_attribute('href')
+            if url and not url.startswith("http://localhost"):
+                websites.append(url)
+                if len(websites) >= 20:  
+                    break
+        
+        if not websites:
+            logging.warning(f"No external URLs found for query '{query}'")
+        
+        return websites
+    except Exception as e:
+        logging.error(f"An error occurred during Perplexica search for '{query}': {e}")
+        return []
+    finally:
+        driver.quit()
+
+def get_best_sources_with_perplexica(query):
+    try:
+        search_results = search_perplexica(query)
+        if search_results:
+            logging.debug(f"Perplexica results for query '{query}': {search_results}")
+        else:
+            logging.warning(f"No results found for query '{query}'")
         return search_results
     except Exception as e:
-        logging.error(f"Error during SerpAPI search for query '{query}': {e}")
+        logging.error(f"Error during Perplexica search for query '{query}': {e}")
         return []
-
 
 def scrape_content(url):
     headers = {
@@ -79,20 +105,18 @@ def scrape_content(url):
         logging.error(f"Unexpected error: {e} for URL {url}")
         return "Unexpected error retrieving content"
 
-
 url_list = []
 
 for category, subcategories in product_categories.items():
     for subcategory in subcategories:
-        query = f"{subcategory} {category.replace('_', ' ')}"
+        query = f"Find URLs for {subcategory}"  
         logging.debug(f"Processing query: {query}")
-        sources = get_best_sources_with_serpapi(query)
+        sources = get_best_sources_with_perplexica(query)
         if not sources:
             logging.warning(f"No sources found for query: {query}")
             continue
         for source in sources:
             url_list.append({"Product Category": category, "Product Subcategory": subcategory, "Source": source})
-
 
 if url_list:
     df = pd.DataFrame(url_list)
@@ -101,11 +125,9 @@ if url_list:
 else:
     logging.warning("No sources to save. Check the API response and URL extraction process.")
 
-
 output_dir = "scraped_content"
 if not os.path.exists(output_dir):
     os.makedirs(output_dir)
-
 
 for entry in url_list:
     category = entry['Product Category']
@@ -121,16 +143,13 @@ for entry in url_list:
 
 logging.info("Content scraped and saved to text files")
 
-
-def process_relevant_information(product_category, product_subcategory, content, source_type):
-    prompt = f"Extract relevant information for the following categories and subcategories for the product '{product_subcategory}' in '{product_category.replace('_', ' ')}'. Tag the information with the appropriate category, subcategory, information type, product type, source type, and country:\n\n"
+def process_relevant_information(product_category, product_subcategory, content):
+    prompt = f"Extract relevant information for the following categories and subcategories for the product '{product_subcategory}' in '{product_category.replace('_', ' ')}':\n\n"
     for main_category, subcategories in information_categories.items():
         prompt += f"{main_category}:\n"
         for subcategory in subcategories:
             prompt += f"  - {subcategory}\n"
     prompt += f"\nContent:\n{content}"
-    prompt += f"\n\nSource Type: {source_type}"
-    prompt += f"\nCountry: YourCountry"  
     try:
         response = openai.ChatCompletion.create(
             model="gpt-4o",
@@ -146,17 +165,15 @@ def process_relevant_information(product_category, product_subcategory, content,
         logging.error(f"Error during processing content for product '{product_subcategory}' in category '{product_category}': {e}")
         return "Error processing content"
 
-
 for category, subcategories in product_categories.items():
     for subcategory in subcategories:
         filename = os.path.join(output_dir, f'{category}_{subcategory.replace(" ", "_")}_content.txt').replace('/', '_')
         if os.path.exists(filename):
             with open(filename, 'r', encoding='utf-8') as f:
                 content = f.read()
-            for source_type in source_types:
-                relevant_info = process_relevant_information(category, subcategory, content, source_type)
-                relevant_filename = os.path.join(output_dir, f'{category}_{subcategory.replace(" ", "_")}_relevant_info.txt').replace('/', '_')
-                with open(relevant_filename, 'w', encoding='utf-8') as f:
-                    f.write(relevant_info)
+            relevant_info = process_relevant_information(category, subcategory, content)
+            relevant_filename = os.path.join(output_dir, f'{category}_{subcategory.replace(" ", "_")}_relevant_info.txt').replace('/', '_')
+            with open(relevant_filename, 'w', encoding='utf-8') as f:
+                f.write(relevant_info)
 
 logging.info("Relevant information processed and saved to text files")
