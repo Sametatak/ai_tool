@@ -144,7 +144,7 @@ for entry in url_list:
 logging.info("Content scraped and saved to text files")
 
 def process_relevant_information(product_category, product_subcategory, content):
-    prompt = f"Extract relevant information for the following categories and subcategories for the product '{product_subcategory}' in '{product_category.replace('_', ' ')}':\n\n"
+    prompt = f"Extract relevant information for the following categories and subcategories for the product '{product_subcategory}' in '{product_category.replace('_', ' ')}'. Tag the information with the appropriate category, subcategory, information type, product type, source type, and country:\n\n"
     for main_category, subcategories in information_categories.items():
         prompt += f"{main_category}:\n"
         for subcategory in subcategories:
